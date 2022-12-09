@@ -7,14 +7,14 @@ Console.Write("Input a second number: ");
 int num2 = Convert.ToInt32(Console.ReadLine());
 
 if(num1 >= num2)
-    Console.WriteLine("Max = " + num1);
+    Console.WriteLine("Max: " + num1);
 else
-    Console.WriteLine("Max = " + num2);
+    Console.WriteLine("Max: " + num2);
 */
 
 // Задача 4. Напишите программу, которая принимает на вход три числа  и выдает максимальное из этих чисел.
 
-
+/*
 Console.Write("Input a number: ");
 int num1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input a second number: ");
@@ -28,5 +28,20 @@ if(num2 > max)
     if(num3 > max)
         max = num3;
 
-Console.WriteLine("Наибольшее число " + max);
+Console.WriteLine("Max: " + max);
+*/
+
+// Задача 6. Напишите программу, которая на вход принимает число и выдает, является ли число четным (делится ли оно на 2 без остатка).
+
+
+Console.Write("Введите целое число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+
+if(num % 2 == 0)
+    Console.WriteLine("Четное число");
+else
+    Console.WriteLine("Нечетное число");
+
+
+
 
