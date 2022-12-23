@@ -3,23 +3,22 @@
 /*
 int ShowSecondNumber(int num)
 {
-    int ed = num % 10;
-    int sot = num / 100;
+    int a = num % 100;
+    int b = a / 10;
 
-   // int result = sot * 10 + ed;
-   // return result;
-   return sot * 10 + ed;
+    return b;
 }
 
 Console.Write("Input a three-digit number: ");
-int Num = ShowSecondNumber(int num);
+int num = Convert.ToInt32(Console.ReadLine());
+int newNum = ShowSecondNumber(num);
 
-Console.WriteLine($"New version of a number {num} is {Num}");
+Console.WriteLine($"New version of a number {num} is {newNum}");
 */
 
 // Задача 13. Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
-
+/*
 Console.WriteLine("Введите число ");
 int number = int.Parse(Console.ReadLine());
 
@@ -50,5 +49,22 @@ else
     }
     Console.WriteLine(array[2]);
 }
+*/
 
+// Задача 15. Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
 
+/*
+Console.WriteLine("Введите цифру от 1 до 7:");
+int num = int.Parse(Console.ReadLine());
+
+bool Holiday(int num)
+{
+    if(num == 6 || num == 7)
+    return true;
+    else
+    return false;
+}
+bool result = Holiday(num);
+
+Console.WriteLine(result);
+*/
